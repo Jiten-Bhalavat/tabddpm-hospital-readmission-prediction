@@ -72,6 +72,16 @@ tabddpm-hospital-readmission-prediction/
 - `results/metrics/`: experiment outputs
 - `results/figures/`: charts and visual diagnostics
 
+## Duplicate artifacts (main vs `anum-forward-process/`)
+
+The repo contains two parallel trees: the main pipeline (`data/`, `models/`, `results/`) and a self-contained copy under `anum-forward-process/` for forward-diffusion experiments.
+
+- `diabetic_data.csv` is stored in both `data/` and `anum-forward-process/data/` (same source dataset; on disk the two files are the same size).
+- Pickles such as `diffusion_config.pkl`, `scaler.pkl`, `label_encoders.pkl`, and `xgboost_baseline.pkl` appear under both `models/` directories; contents can differ slightly if saved at different times.
+- Processed splits live in both `data/processed/` and `anum-forward-process/data/processed/`; sizes can differ if preprocessing diverged.
+
+Keeping both is fine for separate workflows; you can later delete one copy and standardize paths if you want a leaner repository.
+
 ## Setup
 
 ```bash
