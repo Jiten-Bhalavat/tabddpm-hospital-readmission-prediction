@@ -5,7 +5,7 @@
 ![Task](https://img.shields.io/badge/Task-Tabular%20Binary%20Classification-green)
 ![Status](https://img.shields.io/badge/Status-Academic%20Project-orange)
 
-MSML 612 Group Project -- Group 5
+
 
 This project tests whether a diffusion model (TabDDPM) can generate realistic fake patient records to fix class imbalance in hospital readmission prediction. Only 11% of patients in the dataset were readmitted within 30 days, so a normal classifier just says "not readmitted" for everyone and misses the patients that actually matter. We built TabDDPM from scratch in PyTorch, generated synthetic readmitted patients, and compared it against SMOTE and CTGAN.
 
