@@ -127,15 +127,6 @@ Then open and run `notebook/main.ipynb`.
 - **Jensen-Shannon divergence** -- measures how similar the generated patient distributions are to real ones. Lower = more realistic.
 - **t-SNE** -- 2D visualization to check if real and fake patients overlap or separate into clusters.
 
-## Team
-
-| Person | What they built |
-|--------|----------------|
-| Rohith Mandla | Data cleaning, preprocessing, train/test split, training loop |
-| Anum Sagheer | Noise schedule, Gaussian forward process, multinomial diffusion |
-| Jiten Bhalavat | MLP denoising network, timestep embedding, residual blocks with AdaLN |
-| Simi Shrivastava | Class conditioning, reverse diffusion process, synthetic patient generation |
-| Taneir Arani | SMOTE + CTGAN baselines, all evaluation experiments, convergence monitoring |
 
 ## References
 
